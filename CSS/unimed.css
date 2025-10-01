@@ -1,0 +1,33 @@
+/* ===== Unimed Sans ===== */
+@font-face {
+  font-family: 'Unimed Sans';
+  src: url('../FONTES/unimed-sans/Unimed-Regular.woff2') format('woff2'),
+       url('../FONTES/unimed-sans/Unimed-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Unimed Sans';
+  src: url('../FONTES/unimed-sans/Unimed-Bold.woff2') format('woff2'),
+       url('../FONTES/unimed-sans/Unimed-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ===== Unimed Slab ===== */
+@font-face {
+  font-family: 'Unimed Slab';
+  src: url('../FONTES/unimed-sans/UnimedSlab-Regular.woff2') format('woff2'),
+       url('../FONTES/unimed-sans/UnimedSlab-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Unimed Slab';
+  src: url('../FONTES/unimed-sans/UnimedSlab-Bold.woff2') format('woff2'),
+       url('../FONTES/unimed-sans/UnimedSlab-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
