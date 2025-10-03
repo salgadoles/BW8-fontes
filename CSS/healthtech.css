@@ -1,0 +1,144 @@
+/* ================== SANUK OT ================== */
+
+/* Hairline */
+@font-face {
+  font-family: 'Sanuk OT';
+  src: url('../FONTES/sanuk/SanukOT-Hairline.woff2') format('woff2'),
+       url('../FONTES/sanuk/SanukOT-Hairline.woff') format('woff'),
+       url('../FONTES/sanuk/SanukOT-Hairline.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sanuk OT';
+  src: url('../FONTES/sanuk/SanukOT-HairlineItalic.woff2') format('woff2'),
+       url('../FONTES/sanuk/SanukOT-HairlineItalic.woff') format('woff'),
+       url('../FONTES/sanuk/SanukOT-HairlineItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+/* Thin */
+@font-face {
+  font-family: 'Sanuk OT';
+  src: url('../FONTES/sanuk/SanukOT-Thin.woff2') format('woff2'),
+       url('../FONTES/sanuk/SanukOT-Thin.woff') format('woff'),
+       url('../FONTES/sanuk/SanukOT-Thin.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sanuk OT';
+  src: url('../FONTES/sanuk/SanukOT-ThinItalic.woff2') format('woff2'),
+       url('../FONTES/sanuk/SanukOT-ThinItalic.woff') format('woff'),
+       url('../FONTES/sanuk/SanukOT-ThinItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* Light */
+@font-face {
+  font-family: 'Sanuk OT';
+  src: url('../FONTES/sanuk/SanukOT-Light.woff2') format('woff2'),
+       url('../FONTES/sanuk/SanukOT-Light.woff') format('woff'),
+       url('../FONTES/sanuk/SanukOT-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sanuk OT';
+  src: url('../FONTES/sanuk/SanukOT-LightItalic.woff2') format('woff2'),
+       url('../FONTES/sanuk/SanukOT-LightItalic.woff') format('woff'),
+       url('../FONTES/sanuk/SanukOT-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Regular */
+@font-face {
+  font-family: 'Sanuk OT';
+  src: url('../FONTES/sanuk/SanukOT-Regular.woff2') format('woff2'),
+       url('../FONTES/sanuk/SanukOT-Regular.woff') format('woff'),
+       url('../FONTES/sanuk/SanukOT-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sanuk OT';
+  src: url('../FONTES/sanuk/SanukOT-RegularItalic.woff2') format('woff2'),
+       url('../FONTES/sanuk/SanukOT-RegularItalic.woff') format('woff'),
+       url('../FONTES/sanuk/SanukOT-RegularItalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Medium */
+@font-face {
+  font-family: 'Sanuk OT';
+  src: url('../FONTES/sanuk/SanukOT-Medium.woff2') format('woff2'),
+       url('../FONTES/sanuk/SanukOT-Medium.woff') format('woff'),
+       url('../FONTES/sanuk/SanukOT-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sanuk OT';
+  src: url('../FONTES/sanuk/SanukOT-MediumItalic.woff2') format('woff2'),
+       url('../FONTES/sanuk/SanukOT-MediumItalic.woff') format('woff'),
+       url('../FONTES/sanuk/SanukOT-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'Sanuk OT';
+  src: url('../FONTES/sanuk/SanukOT-Bold.woff2') format('woff2'),
+       url('../FONTES/sanuk/SanukOT-Bold.woff') format('woff'),
+       url('../FONTES/sanuk/SanukOT-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sanuk OT';
+  src: url('../FONTES/sanuk/SanukOT-BoldItalic.woff2') format('woff2'),
+       url('../FONTES/sanuk/SanukOT-BoldItalic.woff') format('woff'),
+       url('../FONTES/sanuk/SanukOT-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Black */
+@font-face {
+  font-family: 'Sanuk OT';
+  src: url('../FONTES/sanuk/SanukOT-Black.woff2') format('woff2'),
+       url('../FONTES/sanuk/SanukOT-Black.woff') format('woff'),
+       url('../FONTES/sanuk/SanukOT-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sanuk OT';
+  src: url('../FONTES/sanuk/SanukOT-BlackItalic.woff2') format('woff2'),
+       url('../FONTES/sanuk/SanukOT-BlackItalic.woff') format('woff'),
+       url('../FONTES/sanuk/SanukOT-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Fat */
+@font-face {
+  font-family: 'Sanuk OT';
+  src: url('../FONTES/sanuk/SanukOT-Fat.woff2') format('woff2'),
+       url('../FONTES/sanuk/SanukOT-Fat.woff') format('woff'),
+       url('../FONTES/sanuk/SanukOT-Fat.ttf') format('truetype');
+  font-weight: 950; /* não existe padrão, coloquei acima do 900 */
+  font-style: normal;
+}
