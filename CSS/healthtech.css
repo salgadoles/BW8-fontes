@@ -3,18 +3,18 @@
 /* Hairline */
 @font-face {
   font-family: 'Sanuk OT';
-  src: url('../FONTES/sanuk/SanukOT-Hairline.woff2') format('woff2'),
-       url('../FONTES/sanuk/SanukOT-Hairline.woff') format('woff'),
-       url('../FONTES/sanuk/SanukOT-Hairline.ttf') format('truetype');
+  src: url('../FONTES/health-tech/SanukOT-Hairline.woff2') format('woff2'),
+       url('../FONTES/health-tech/SanukOT-Hairline.woff') format('woff'),
+       url('../FONTES/health-tech/SanukOT-Hairline.ttf') format('truetype');
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Sanuk OT';
-  src: url('../FONTES/sanuk/SanukOT-HairlineItalic.woff2') format('woff2'),
-       url('../FONTES/sanuk/SanukOT-HairlineItalic.woff') format('woff'),
-       url('../FONTES/sanuk/SanukOT-HairlineItalic.ttf') format('truetype');
+  src: url('../FONTES/health-tech/SanukOT-HairlineItalic.woff2') format('woff2'),
+       url('../FONTES/health-tech/SanukOT-HairlineItalic.woff') format('woff'),
+       url('../FONTES/health-tech/SanukOT-HairlineItalic.ttf') format('truetype');
   font-weight: 100;
   font-style: italic;
 }
@@ -22,18 +22,18 @@
 /* Thin */
 @font-face {
   font-family: 'Sanuk OT';
-  src: url('../FONTES/sanuk/SanukOT-Thin.woff2') format('woff2'),
-       url('../FONTES/sanuk/SanukOT-Thin.woff') format('woff'),
-       url('../FONTES/sanuk/SanukOT-Thin.ttf') format('truetype');
+  src: url('../FONTES/health-tech/SanukOT-Thin.woff2') format('woff2'),
+       url('../FONTES/health-tech/SanukOT-Thin.woff') format('woff'),
+       url('../FONTES/health-tech/SanukOT-Thin.ttf') format('truetype');
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Sanuk OT';
-  src: url('../FONTES/sanuk/SanukOT-ThinItalic.woff2') format('woff2'),
-       url('../FONTES/sanuk/SanukOT-ThinItalic.woff') format('woff'),
-       url('../FONTES/sanuk/SanukOT-ThinItalic.ttf') format('truetype');
+  src: url('../FONTES/health-tech/SanukOT-ThinItalic.woff2') format('woff2'),
+       url('../FONTES/health-tech/SanukOT-ThinItalic.woff') format('woff'),
+       url('../FONTES/health-tech/SanukOT-ThinItalic.ttf') format('truetype');
   font-weight: 200;
   font-style: italic;
 }
@@ -41,18 +41,18 @@
 /* Light */
 @font-face {
   font-family: 'Sanuk OT';
-  src: url('../FONTES/sanuk/SanukOT-Light.woff2') format('woff2'),
-       url('../FONTES/sanuk/SanukOT-Light.woff') format('woff'),
-       url('../FONTES/sanuk/SanukOT-Light.ttf') format('truetype');
+  src: url('../FONTES/health-tech/SanukOT-Light.woff2') format('woff2'),
+       url('../FONTES/health-tech/SanukOT-Light.woff') format('woff'),
+       url('../FONTES/health-tech/SanukOT-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Sanuk OT';
-  src: url('../FONTES/sanuk/SanukOT-LightItalic.woff2') format('woff2'),
-       url('../FONTES/sanuk/SanukOT-LightItalic.woff') format('woff'),
-       url('../FONTES/sanuk/SanukOT-LightItalic.ttf') format('truetype');
+  src: url('../FONTES/health-tech/SanukOT-LightItalic.woff2') format('woff2'),
+       url('../FONTES/health-tech/SanukOT-LightItalic.woff') format('woff'),
+       url('../FONTES/health-tech/SanukOT-LightItalic.ttf') format('truetype');
   font-weight: 300;
   font-style: italic;
 }
@@ -60,18 +60,18 @@
 /* Regular */
 @font-face {
   font-family: 'Sanuk OT';
-  src: url('../FONTES/sanuk/SanukOT-Regular.woff2') format('woff2'),
-       url('../FONTES/sanuk/SanukOT-Regular.woff') format('woff'),
-       url('../FONTES/sanuk/SanukOT-Regular.ttf') format('truetype');
+  src: url('../FONTES/health-tech/SanukOT-Regular.woff2') format('woff2'),
+       url('../FONTES/health-tech/SanukOT-Regular.woff') format('woff'),
+       url('../FONTES/health-tech/SanukOT-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Sanuk OT';
-  src: url('../FONTES/sanuk/SanukOT-RegularItalic.woff2') format('woff2'),
-       url('../FONTES/sanuk/SanukOT-RegularItalic.woff') format('woff'),
-       url('../FONTES/sanuk/SanukOT-RegularItalic.ttf') format('truetype');
+  src: url('../FONTES/health-tech/SanukOT-RegularItalic.woff2') format('woff2'),
+       url('../FONTES/health-tech/SanukOT-RegularItalic.woff') format('woff'),
+       url('../FONTES/health-tech/SanukOT-RegularItalic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
 }
@@ -79,18 +79,18 @@
 /* Medium */
 @font-face {
   font-family: 'Sanuk OT';
-  src: url('../FONTES/sanuk/SanukOT-Medium.woff2') format('woff2'),
-       url('../FONTES/sanuk/SanukOT-Medium.woff') format('woff'),
-       url('../FONTES/sanuk/SanukOT-Medium.ttf') format('truetype');
+  src: url('../FONTES/health-tech/SanukOT-Medium.woff2') format('woff2'),
+       url('../FONTES/health-tech/SanukOT-Medium.woff') format('woff'),
+       url('../FONTES/health-tech/SanukOT-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Sanuk OT';
-  src: url('../FONTES/sanuk/SanukOT-MediumItalic.woff2') format('woff2'),
-       url('../FONTES/sanuk/SanukOT-MediumItalic.woff') format('woff'),
-       url('../FONTES/sanuk/SanukOT-MediumItalic.ttf') format('truetype');
+  src: url('../FONTES/health-tech/SanukOT-MediumItalic.woff2') format('woff2'),
+       url('../FONTES/health-tech/SanukOT-MediumItalic.woff') format('woff'),
+       url('../FONTES/health-tech/SanukOT-MediumItalic.ttf') format('truetype');
   font-weight: 500;
   font-style: italic;
 }
@@ -98,18 +98,18 @@
 /* Bold */
 @font-face {
   font-family: 'Sanuk OT';
-  src: url('../FONTES/sanuk/SanukOT-Bold.woff2') format('woff2'),
-       url('../FONTES/sanuk/SanukOT-Bold.woff') format('woff'),
-       url('../FONTES/sanuk/SanukOT-Bold.ttf') format('truetype');
+  src: url('../FONTES/health-tech/SanukOT-Bold.woff2') format('woff2'),
+       url('../FONTES/health-tech/SanukOT-Bold.woff') format('woff'),
+       url('../FONTES/health-tech/SanukOT-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Sanuk OT';
-  src: url('../FONTES/sanuk/SanukOT-BoldItalic.woff2') format('woff2'),
-       url('../FONTES/sanuk/SanukOT-BoldItalic.woff') format('woff'),
-       url('../FONTES/sanuk/SanukOT-BoldItalic.ttf') format('truetype');
+  src: url('../FONTES/health-tech/SanukOT-BoldItalic.woff2') format('woff2'),
+       url('../FONTES/health-tech/SanukOT-BoldItalic.woff') format('woff'),
+       url('../FONTES/health-tech/SanukOT-BoldItalic.ttf') format('truetype');
   font-weight: 700;
   font-style: italic;
 }
@@ -117,28 +117,28 @@
 /* Black */
 @font-face {
   font-family: 'Sanuk OT';
-  src: url('../FONTES/sanuk/SanukOT-Black.woff2') format('woff2'),
-       url('../FONTES/sanuk/SanukOT-Black.woff') format('woff'),
-       url('../FONTES/sanuk/SanukOT-Black.ttf') format('truetype');
+  src: url('../FONTES/health-tech/SanukOT-Black.woff2') format('woff2'),
+       url('../FONTES/health-tech/SanukOT-Black.woff') format('woff'),
+       url('../FONTES/health-tech/SanukOT-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Sanuk OT';
-  src: url('../FONTES/sanuk/SanukOT-BlackItalic.woff2') format('woff2'),
-       url('../FONTES/sanuk/SanukOT-BlackItalic.woff') format('woff'),
-       url('../FONTES/sanuk/SanukOT-BlackItalic.ttf') format('truetype');
+  src: url('../FONTES/health-tech/SanukOT-BlackItalic.woff2') format('woff2'),
+       url('../FONTES/health-tech/SanukOT-BlackItalic.woff') format('woff'),
+       url('../FONTES/health-tech/SanukOT-BlackItalic.ttf') format('truetype');
   font-weight: 900;
   font-style: italic;
 }
 
-/* Fat */
+/* Fat (acima do Black, não padrão CSS) */
 @font-face {
   font-family: 'Sanuk OT';
-  src: url('../FONTES/sanuk/SanukOT-Fat.woff2') format('woff2'),
-       url('../FONTES/sanuk/SanukOT-Fat.woff') format('woff'),
-       url('../FONTES/sanuk/SanukOT-Fat.ttf') format('truetype');
-  font-weight: 950; /* não existe padrão, coloquei acima do 900 */
+  src: url('../FONTES/health-tech/SanukOT-Fat.woff2') format('woff2'),
+       url('../FONTES/health-tech/SanukOT-Fat.woff') format('woff'),
+       url('../FONTES/health-tech/SanukOT-Fat.ttf') format('truetype');
+  font-weight: 950; 
   font-style: normal;
 }
