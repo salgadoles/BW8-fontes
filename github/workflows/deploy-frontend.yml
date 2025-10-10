@@ -4,6 +4,7 @@ on:
   push:
     branches: [ main ]
     paths: ["frontend/**"] # Isso garante que o workflow só rode quando houver mudanças na pasta frontend
+  workflow_dispatch: # <--- ADICIONADO AQUI
 
 jobs:
   deploy:
