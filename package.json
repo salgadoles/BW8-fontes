@@ -1,5 +1,13 @@
 {
+  "name": "bw8-font-system",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix BACKEND\" \"npm start --prefix frontend\"",
+    "install-all": "npm install && npm install --prefix BACKEND && npm install --prefix frontend",
+    "sync": "node BACKEND/scripts/sync-to-github.js"
+  },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.14"
+    "@tailwindcss/postcss": "^4.1.14",
+    "concurrently": "^8.2.2"
   }
 }
