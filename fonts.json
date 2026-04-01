@@ -16,5 +16,11 @@
     "displayName": "Unimed",
     "family": "Unimed Sans",
     "cssUrl": "css-files/unimed.css"
+  },
+  {
+    "id": "roboto",
+    "displayName": "Roboto",
+    "family": "Roboto",
+    "cssUrl": "css-files/roboto.css"
   }
 ]
