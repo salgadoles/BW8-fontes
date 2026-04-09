@@ -1,4 +1,4 @@
-import React, { useState, useEffect, ChangeEvent, FormEvent } from 'react';
+import React, { useState, useEffect, useCallback, ChangeEvent, FormEvent } from 'react';
 import axios from 'axios';
 import { Upload, Download, Copy, Eye, Palette, Zap, Check, AlertCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -31,7 +31,7 @@ function App() {
   // Carregar fontes disponíveis
   useEffect(() => {
     fetchFonts();
-  }, []);
+  }, [fetchFonts]);
 
   // Injetar links de CSS dinamicamente para que as fontes funcionem no preview
   useEffect(() => {
@@ -51,7 +51,7 @@ function App() {
     };
   }, [fonts]);
 
-  const fetchFonts = async () => {
+  const fetchFonts = useCallback(async () => {
     try {
       setLoading(true);
       const response = await axios.get<Font[]>(`${API_BASE_URL}/fonts`);
@@ -62,7 +62,7 @@ function App() {
     } finally {
       setLoading(false);
     }
-  };
+  }, []);
 
   const mostrarNotificacao = (tipo: 'sucesso' | 'erro', mensagem: string) => {
     setNotificacao({ tipo, mensagem });
