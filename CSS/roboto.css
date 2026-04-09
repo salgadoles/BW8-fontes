@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url('../FONTES/roboto/Manrope,Montserrat,Open_Sans,Philosopher,Poppins,etc.zip') format('zip');
-  font-weight: 400;
+  src: url('../FONTES/roboto/Roboto/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }

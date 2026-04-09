@@ -139,13 +139,11 @@ function App() {
               animate={{ opacity: 1, x: 0 }}
               className="flex items-center space-x-4"
             >
-              <div className="w-12 h-12 premium-gradient rounded-full flex items-center justify-center shadow-lg transform hover:rotate-6 transition-transform">
-                <Palette className="w-7 h-7 text-white" />
-              </div>
+             <div className="h-10 flex items-center justify-center transform hover:scale-105 transition-transform">
+               <img src={`${process.env.PUBLIC_URL}/logo-bw8-topo2.png`} alt="BW8 Logo" className="h-full w-auto object-contain drop-shadow-md" />
+             </div>
               <div>
-                <h1 className="text-2xl font-black text-gradient tracking-tight">
-                  BW8 MARTECH
-                </h1>
+               
                 <p className="text-xs font-bold text-gray-500 uppercase tracking-widest">Sistema de Fontes BW8 (do sal rs)</p>
               </div>
             </motion.div>
@@ -458,14 +456,7 @@ function App() {
                       </div>
                     </div>
                     
-                    <div className="flex md:flex-col gap-3">
-                      <div className="w-16 h-16 glass rounded-full flex items-center justify-center text-[#61CE18] font-black text-2xl shadow-sm">
-                        Ag
-                      </div>
-                      <div className="w-16 h-16 glass rounded-full flex items-center justify-center text-[#61CE18] font-black text-lg shadow-sm">
-                        #32
-                      </div>
-                    </div>
+                    
                   </div>
                 </motion.div>
               ))}

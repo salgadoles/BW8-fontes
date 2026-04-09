@@ -1,37 +1,9 @@
-/* ===== Unimed Sans ===== */
+/* ===== Porto Principe (Amithen) ===== */
 @font-face {
-  font-family: 'Unimed Sans';
-  src: url('../FONTES/porto-principe/Amithen.ttf') format('ttf'),
-       url('../FONTES/unimed-sans/Unimed-Regular.woff') format('woff'),
-       url('../FONTES/unimed-sans/Unimed-Regular.ttf') format('truetype');
+  font-family: 'Amithen';
+  src: url('../FONTES/porto-principe/Amithen.ttf') format('truetype'),
+       url('../FONTES/porto-principe/Amithen.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Unimed Sans';
-  src: url('../FONTES/unimed-sans/Unimed-Bold.woff2') format('woff2'),
-       url('../FONTES/unimed-sans/Unimed-Bold.woff') format('woff'),
-       url('../FONTES/unimed-sans/Unimed-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-/* ===== Unimed Slab ===== */
-@font-face {
-  font-family: 'Unimed Slab';
-  src: url('../FONTES/unimed-sans/UnimedSlab-Regular.woff2') format('woff2'),
-       url('../FONTES/unimed-sans/UnimedSlab-Regular.woff') format('woff'),
-       url('../FONTES/unimed-sans/UnimedSlab-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Unimed Slab';
-  src: url('../FONTES/unimed-sans/UnimedSlab-Bold.woff2') format('woff2'),
-       url('../FONTES/unimed-sans/UnimedSlab-Bold.woff') format('woff'),
-       url('../FONTES/unimed-sans/UnimedSlab-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}

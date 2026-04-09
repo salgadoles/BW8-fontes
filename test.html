@@ -1,0 +1,80 @@
+<section class="dobra-cards">
+    <section class="cards1">
+        <img src="https://d335luupugsy2.cloudfront.net/cms/files/1139626/1775485810/$1x0nv6lyfvb" alt="" class="icon-card">
+        <h1 class="titulo-card1">Comissões</h1>
+        <p class="descricao-card">
+            Seja remunerado de forma justa por cada negócio fechado através da sua indicação. Uma nova e poderosa fonte de receita para o seu negócio.
+        </p>
+    </section>
+    <section class="cards2">
+        <img src="https://d335luupugsy2.cloudfront.net/cms/files/1139626/1775485810/$wogfkn26np" alt="" class="icon-card">
+        <h1 class="titulo-card2">Suporte</h1>
+        <p class="descricao-card">Você não precisa ser um expert em consórcio. Nossa equipe de consultores estratégicos cuida de todo o processo, da explicação técnica ao fechamento.</p>
+    </section>
+    <section class="cards3">
+        <img src="https://d335luupugsy2.cloudfront.net/cms/files/1139626/1775485810/$yan6bp4kedf" alt="" class="icon-card">
+        <h1 class="titulo-card3">Material</h1>
+        <p class="descricao-card">Tenha acesso a um kit completo de materiais (PDFs, scripts e artes) para facilitar sua abordagem e dar autoridade à sua recomendação.</p>
+    </section>
+    <section class="cards4">
+        <img src="https://d335luupugsy2.cloudfront.net/cms/files/1139626/1775485810/$gip9xyg0y5" alt="" class="icon-card">
+        <h1 class="titulo-card4">Transparência</h1>
+        <p class="descricao-card">Utilize a plataforma Beeviral para acompanhar em tempo real o status de cada indicação, com controle total sobre seus recebimentos e histórico.</p>
+    </section>
+</section>
+
+<style>
+.dobra-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 60px 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.dobra-cards section {
+  background: #F4F3F7;
+  padding: 25px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.dobra-cards section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.icon-card {
+  width: 28px;
+  margin-bottom: 15px;
+}
+
+.titulo-card1,
+.titulo-card2,
+.titulo-card3,
+.titulo-card4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #04006f;
+  margin-bottom: 30px;
+}
+
+.descricao-card {
+  font-size: 14px;
+  color: #6e6e73;
+  line-height: 1.5;
+}
+
+/* RESPONSIVO */
+@media (max-width: 1024px) {
+  .dobra-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .dobra-cards {
+    grid-template-columns: 1fr;
+  }
+}
+</style>

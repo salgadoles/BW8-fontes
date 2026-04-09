@@ -8,11 +8,11 @@
   {
     "id": "porto-principe",
     "displayName": "Porto Príncipe",
-    "family": "Unimed Sans",
+    "family": "Amithen",
     "cssUrl": "css-files/portoprincipe.css"
   },
   {
-    "id": "unimed",
+    "id": "unimed-sans",
     "displayName": "Unimed",
     "family": "Unimed Sans",
     "cssUrl": "css-files/unimed.css"
@@ -22,5 +22,11 @@
     "displayName": "Roboto",
     "family": "Roboto",
     "cssUrl": "css-files/roboto.css"
+  },
+  {
+    "id": "boldonse",
+    "displayName": "boldense",
+    "family": "Boldonse",
+    "cssUrl": "css-files/boldonse.css"
   }
 ]
