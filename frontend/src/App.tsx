@@ -21,7 +21,7 @@ function App() {
   const [uploadFiles, setUploadFiles] = useState<File[]>([]);
   const [fontFamily, setFontFamily] = useState<string>('');
   const [activeTab, setActiveTab] = useState<string>('gallery');
-  const [previewText, setPreviewText] = useState<string>('O rato roeu a roupa do rei de Roma');
+  const [previewText, setPreviewText] = useState<string>('vote salgadoles para CEO');
   const [notificacao, setNotificacao] = useState<{ tipo: 'sucesso' | 'erro', mensagem: string } | null>(null);
 
   // Carregar fontes disponíveis
@@ -130,8 +130,10 @@ function App() {
         )}
       </AnimatePresence>
 
-      {/* Header Premium */}
-      <header className="glass sticky top-0 z-50 border-b border-white/10">
+      {/* Header BW8 */}
+      <header className="glass sticky top-0 z-50" style={{ borderBottom: 'none' }}>
+        {/* Linha estilosa no fundo do header */}
+        <div className="stylish-line" />
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <motion.div 
@@ -139,13 +141,11 @@ function App() {
               animate={{ opacity: 1, x: 0 }}
               className="flex items-center space-x-4"
             >
-             <div className="h-10 flex items-center justify-center transform hover:scale-105 transition-transform">
-               <img src={`${process.env.PUBLIC_URL}/logo-bw8-topo2.png`} alt="BW8 Logo" className="h-full w-auto object-contain drop-shadow-md" />
-             </div>
-              <div>
-               
-                <p className="text-xs font-bold text-gray-500 uppercase tracking-widest">Sistema de Fontes BW8 (do sal rs)</p>
+              <div className="h-10 flex items-center justify-center transform hover:scale-105 transition-transform">
+                <img src={`${process.env.PUBLIC_URL}/logo-bw8-topo2.png`} alt="BW8 Logo" className="h-full w-auto object-contain drop-shadow-md" />
               </div>
+              <div className="stylish-line-v" />
+              <p className="text-xs font-bold uppercase tracking-widest" style={{ color: 'var(--bw8-text-muted)' }}>Sistema de Fontes</p>
             </motion.div>
             
             <motion.div 
@@ -153,19 +153,19 @@ function App() {
               animate={{ opacity: 1, x: 0 }}
               className="hidden md:flex items-center space-x-2"
             >
-              <div className="glass text-[#61CE18] border-bw8 px-4 py-1.5 rounded-full text-sm font-semibold flex items-center shadow-sm">
+              <div className="badge-green px-4 py-1.5 rounded-full text-sm font-semibold flex items-center">
                 <Zap className="w-4 h-4 mr-2" />
                 {fonts.length} Fontes Ativas
               </div>
             </motion.div>
           </div>
         </div>
+        <div className="stylish-line" />
       </header>
 
       <main className="container mx-auto px-6 py-12">
-        {/* Navegação de Tabs Estilizada */}
         <div className="flex justify-center mb-16">
-          <div className="glass p-1.5 rounded-full shadow-xl flex space-x-1">
+          <div className="glass p-1.5 rounded-full flex space-x-1">
             {[
               { id: 'gallery', label: 'Galeria', icon: Eye },
               { id: 'upload', label: 'Adicionar', icon: Upload },
@@ -176,7 +176,7 @@ function App() {
                 onClick={() => setActiveTab(id)}
                 className={`px-8 py-3 rounded-full flex items-center space-x-3 transition-all duration-300 font-bold ${
                   activeTab === id
-                    ? 'premium-gradient text-black shadow-lg scale-105'
+                    ? 'bg-[#61CE18] text-black shadow-lg scale-105'
                     : 'text-gray-400 hover:text-white hover:bg-white/5'
                 }`}
               >
@@ -251,7 +251,7 @@ function App() {
                         </button>
                         <button 
                           onClick={() => window.location.href = `${API_BASE_URL}/download/${font.id}`}
-                          className="flex-1 premium-gradient hover:opacity-90 text-black font-bold px-4 py-3 rounded-full flex items-center justify-center space-x-2 shadow-md transition-all active:scale-95"
+                          className="flex-1 bg-[#61CE18] hover:bg-[#55b814] text-black font-bold px-4 py-3 rounded-full flex items-center justify-center space-x-2 transition-all active:scale-95"
                           title="Baixar arquivos da fonte (.zip)"
                         >
                           <Download className="w-4 h-4" />
@@ -293,10 +293,10 @@ function App() {
             animate={{ opacity: 1, y: 0 }}
             className="max-w-3xl mx-auto"
           >
-            <div className="glass rounded-[2rem] p-10 shadow-2xl border-white/60">
+            <div className="glass rounded-[2rem] p-10 border-white/10">
               <div className="text-center mb-10">
-                <div className="w-20 h-20 premium-gradient rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-xl shadow-indigo-200">
-                  <Upload className="w-10 h-10 text-white" />
+                <div className="w-20 h-20 bg-[#61CE18]/10 border border-[#61CE18]/30 rounded-3xl flex items-center justify-center mx-auto mb-6">
+                  <Upload className="w-10 h-10 text-[#61CE18]" />
                 </div>
                 <h2 className="text-3xl font-black text-white mb-3 tracking-tight">
                   Nova Família de Fontes
@@ -373,7 +373,7 @@ function App() {
                 <button 
                   type="submit"
                   disabled={loading || !fontFamily || uploadFiles.length === 0}
-                  className="w-full premium-gradient hover:shadow-2xl hover:shadow-[#61CE18]/20 disabled:opacity-50 text-black py-5 px-8 rounded-full font-black text-lg transition-all transform active:scale-[0.98] shadow-xl flex items-center justify-center space-x-4"
+                  className="w-full bg-[#61CE18] hover:bg-[#55b814] disabled:opacity-40 text-black py-5 px-8 rounded-full font-black text-lg transition-all transform active:scale-[0.98] flex items-center justify-center space-x-4"
                 >
                   {loading ? (
                     <>
@@ -465,17 +465,24 @@ function App() {
         )}
       </main>
 
-      {/* Footer Minimalista */}
-      <footer className="mt-24 py-12 border-t border-white/10 bg-black/40">
+      {/* Footer BW8 */}
+      <footer className="mt-24 py-14 bg-black/60" style={{ borderTop: 'none' }}>
+        <div className="stylish-line mb-12" />
         <div className="container mx-auto px-6 text-center">
-          <div className="flex items-center justify-center space-x-3 mb-6">
-            <div className="w-8 h-8 premium-gradient rounded-lg flex items-center justify-center">
-              <Palette className="w-5 h-5 text-white" />
-            </div>
-            <span className="font-black text-gradient tracking-tight">BW8 FONTS</span>
+          <div className="flex flex-col items-center gap-5 mb-6">
+            <img
+              src={`${process.env.PUBLIC_URL}/logo-bw8-topo2.png`}
+              alt="BW8"
+              className="h-8 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+            />
+            <div className="stylish-line-sm" />
           </div>
-          <p className="text-gray-400 text-sm font-medium">© 2024 BW8 Digital Solutions. Todos os direitos reservados.</p>
-          <p className="text-[10px] text-gray-300 uppercase tracking-widest mt-2 font-black">Performance • Brand • Tech</p>
+          <p className="text-sm font-medium" style={{ color: 'var(--bw8-text-muted)' }}>
+            © {new Date().getFullYear()} BW8 Digital Solutions. Todos os direitos reservados.
+          </p>
+          <p className="text-[10px] uppercase tracking-widest mt-2 font-black" style={{ color: 'var(--bw8-text-muted)' }}>
+            Performance • Brand • Tech
+          </p>
         </div>
       </footer>
     </div>

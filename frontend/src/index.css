@@ -4,38 +4,53 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 
+/* =============================================
+   BW8 FONTS — DESIGN SYSTEM
+   Paleta: #61CE18 (Verde) + #7B2FF7 (Roxo)
+   ============================================= */
+
+:root {
+  --bw8-green: #61CE18;
+  --bw8-green-dim: rgba(97, 206, 24, 0.15);
+  --bw8-purple: #7B2FF7;
+  --bw8-purple-dim: rgba(123, 47, 247, 0.15);
+  --bw8-dark: #050508;
+  --bw8-card: rgba(12, 12, 20, 0.75);
+  --bw8-border: rgba(255, 255, 255, 0.07);
+  --bw8-text-muted: rgba(255, 255, 255, 0.4);
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #000000;
+  background: var(--bw8-dark);
   color: #ffffff;
   overflow-x: hidden;
 }
 
-.glass {
-  background: rgba(17, 17, 17, 0.7);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+/* =============================================
+   FUNDO ANIMADO: MESH + NOISE
+   ============================================= */
+
+/* Camada de ruído/grain */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
 }
 
-.premium-gradient {
-  background: linear-gradient(135deg, #61CE18 0%, #1a3c07 100%);
-}
-
-.text-gradient {
-  background: linear-gradient(135deg, #61CE18 0%, #ffffff 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.border-bw8 {
-  border-color: rgba(97, 206, 24, 0.3);
-}
-
+/* Mesh principal de gradientes */
 .bg-mesh {
   position: fixed;
   top: 0;
@@ -43,9 +58,153 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
-  opacity: 0.15;
-  background-image: 
-    radial-gradient(circle at 20% 30%, #61CE18 0%, transparent 50%),
-    radial-gradient(circle at 80% 70%, #1a3c07 0%, transparent 50%);
-  filter: blur(120px);
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 60% 50% at 15% 20%, rgba(123, 47, 247, 0.25) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 60% at 85% 75%, rgba(97, 206, 24, 0.18) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 40% at 50% 50%, rgba(123, 47, 247, 0.06) 0%, transparent 100%),
+    var(--bw8-dark);
+}
+
+/* =============================================
+   GLASSMORPHISM
+   ============================================= */
+
+.glass {
+  background: var(--bw8-card);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--bw8-border);
+}
+
+/* =============================================
+   GRADIENTES PREMIUM BW8
+   ============================================= */
+
+.premium-gradient {
+  background: linear-gradient(135deg, var(--bw8-green) 0%, #3dd68c 40%, #7B2FF7 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--bw8-green) 0%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-reverse {
+  background: linear-gradient(135deg, #a78bfa 0%, var(--bw8-green) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* =============================================
+   LINHAS ESTILOSAS BW8
+   ============================================= */
+
+.stylish-line {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--bw8-purple) 30%,
+    var(--bw8-green) 70%,
+    transparent 100%
+  );
+  opacity: 0.5;
+  border: none;
+}
+
+.stylish-line-sm {
+  height: 1px;
+  width: 60%;
+  margin: 0 auto;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(123, 47, 247, 0.6) 40%,
+    rgba(97, 206, 24, 0.6) 60%,
+    transparent 100%
+  );
+  border: none;
+}
+
+/* Linha decorativa vertical */
+.stylish-line-v {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(180deg, transparent, var(--bw8-purple), var(--bw8-green), transparent);
+  opacity: 0.6;
+}
+
+/* =============================================
+   BORDAS COM GLOW
+   ============================================= */
+
+.border-bw8 {
+  border-color: rgba(97, 206, 24, 0.3);
+}
+
+.glow-green {
+  box-shadow: 0 0 20px rgba(97, 206, 24, 0.15), 0 0 60px rgba(97, 206, 24, 0.05);
+}
+
+.glow-purple {
+  box-shadow: 0 0 20px rgba(123, 47, 247, 0.2), 0 0 60px rgba(123, 47, 247, 0.06);
+}
+
+/* =============================================
+   BADGE / PILLS
+   ============================================= */
+
+.badge-green {
+  background: var(--bw8-green-dim);
+  border: 1px solid rgba(97, 206, 24, 0.3);
+  color: var(--bw8-green);
+}
+
+.badge-purple {
+  background: var(--bw8-purple-dim);
+  border: 1px solid rgba(123, 47, 247, 0.3);
+  color: #c4b5fd;
+}
+
+/* =============================================
+   CARD ACCENT — linha superior colorida
+   ============================================= */
+
+.card-accent::before {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(90deg, var(--bw8-purple), var(--bw8-green));
+  border-radius: 2px 2px 0 0;
+  margin-bottom: 1px;
+}
+
+/* =============================================
+   SCROLLBAR CUSTOMIZADA
+   ============================================= */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a12;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--bw8-purple), var(--bw8-green));
+  border-radius: 3px;
+}
+
+/* =============================================
+   SELEÇÃO DE TEXTO
+   ============================================= */
+
+::selection {
+  background: rgba(123, 47, 247, 0.4);
+  color: #fff;
 }

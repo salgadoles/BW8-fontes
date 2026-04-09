@@ -28,5 +28,11 @@
     "displayName": "boldense",
     "family": "Boldonse",
     "cssUrl": "css-files/boldonse.css"
+  },
+  {
+    "id": "noto-serif-jp-extralight",
+    "displayName": "note-jp",
+    "family": "Noto Serif JP ExtraLight",
+    "cssUrl": "css-files/noto-serif-jp-extralight.css"
   }
 ]
