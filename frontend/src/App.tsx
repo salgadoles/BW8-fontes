@@ -13,7 +13,11 @@ interface Font {
 }
 
 // IMPORTANTE: Ajustado para o novo backend
-const API_BASE_URL = 'http://localhost:3001/api';
+// Configuração dinâmica da API
+const API_BASE_URL = process.env.REACT_APP_API_URL || 
+  (window.location.hostname === 'localhost' 
+    ? 'http://localhost:3001/api' 
+    : 'https://seu-backend-no-render.onrender.com/api'); // Depois trocamos pela URL real do Render
 
 function App() {
   const [fonts, setFonts] = useState<Font[]>([]);

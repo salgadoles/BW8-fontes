@@ -54,9 +54,11 @@ app.get('/api/fonts', (req, res) => {
     }
     const data = JSON.parse(fs.readFileSync(fontsJsonPath, 'utf8'));
     // Garantir URLs completas para o frontend
+    const host = req.get('host');
+    const protocol = req.protocol;
     const fonts = data.map(f => ({
       ...f,
-      cssUrl: `http://localhost:${port}/${f.cssUrl}`
+      cssUrl: `${protocol}://${host}/${f.cssUrl}`
     }));
     res.json(fonts);
   } catch (error) {
