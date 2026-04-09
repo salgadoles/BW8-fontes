@@ -28,6 +28,24 @@ function App() {
   const [previewText, setPreviewText] = useState<string>('vote salgadoles para CEO');
   const [notificacao, setNotificacao] = useState<{ tipo: 'sucesso' | 'erro', mensagem: string } | null>(null);
 
+  const mostrarNotificacao = useCallback((tipo: 'sucesso' | 'erro', mensagem: string) => {
+    setNotificacao({ tipo, mensagem });
+    setTimeout(() => setNotificacao(null), 5000);
+  }, []);
+
+  const fetchFonts = useCallback(async () => {
+    try {
+      setLoading(true);
+      const response = await axios.get<Font[]>(`${API_BASE_URL}/fonts`);
+      setFonts(response.data);
+    } catch (error) {
+      console.error('Erro ao carregar fontes:', error);
+      mostrarNotificacao('erro', 'Não foi possível carregar as fontes do servidor.');
+    } finally {
+      setLoading(false);
+    }
+  }, [mostrarNotificacao]);
+
   // Carregar fontes disponíveis
   useEffect(() => {
     fetchFonts();
@@ -50,24 +68,6 @@ function App() {
       // Opcional: remover os links ao desmontar ou quando as fontes mudarem
     };
   }, [fonts]);
-
-  const fetchFonts = useCallback(async () => {
-    try {
-      setLoading(true);
-      const response = await axios.get<Font[]>(`${API_BASE_URL}/fonts`);
-      setFonts(response.data);
-    } catch (error) {
-      console.error('Erro ao carregar fontes:', error);
-      mostrarNotificacao('erro', 'Não foi possível carregar as fontes do servidor.');
-    } finally {
-      setLoading(false);
-    }
-  }, []);
-
-  const mostrarNotificacao = (tipo: 'sucesso' | 'erro', mensagem: string) => {
-    setNotificacao({ tipo, mensagem });
-    setTimeout(() => setNotificacao(null), 5000);
-  };
 
   const handleFileUpload = (event: ChangeEvent<HTMLInputElement>) => {
     if (event.target.files) {
